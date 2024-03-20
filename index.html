@@ -35,10 +35,10 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a style= "margin-top: -30px" class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a style= "margin-top: -30px" class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link max-lg-2" href=".About">About</a>
+                  <a class="nav-link max-lg-2" href="#About">About</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -99,7 +99,7 @@
 		</div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
 	</div>
   <!--  ABOUT US-->
-  <section class="About">
+  <section id="About">
     <div class="title">
   </br>
       <h2>About Us</h2>
@@ -168,7 +168,7 @@ welcome to this event managment website
       
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
       <script>
-          $('.box .content').click(function() {
+          $('.box .content').hover(function() {
           $(this).closest('.box').toggleClass('animate');
           $(this).css('transform, rotateY(180deg)');
       });
