@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<!--divinectorweb.com-->
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -13,17 +16,65 @@
     <link rel="stylesheet" href="slider.css">
     <link rel="icon" type="image/x-icon" href="pictures\tmslogo1.png">
     <title>Event Mnanagment Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- styling carousel-->
+	<style>
+        .carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+.carousel-caption {
+	bottom: 220px;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	font-family: merienda;
+    color: aqua;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+	font-family: poppins;
+    color: aqua;
+}
+.carousel-caption a {
+	text-transform: uppercase;
+	background: #262626;
+	padding: 10px 30px;
+	display: inline-block;
+	color:teal;
+	margin-top: 15px;
+}
+.w-100 {
+	height: 100vh;
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav.ml-auto {
+		background: rgba(0, 0, 0, 0.5);
+	}
+	.navbar-nav a {
+		font-size: 14px;
+		font-weight: normal;
+	}
+}
+
+    </style>
 </head>
 <body>
-  <!--  nav bar-->
-    <nav class="navbar navbar-expand-lg fixed-top">
+	 <!--  nav bar-->
+     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
          <!-- <a class="navbar-brand me-auto" href="home.html">Techno Main Saltlake</a>-->
          <a class="navbar-brand" href="#"><img 
           src= 
 "pictures\tmslogo.png" 
-          alt="" width="125px" 
-          height="30px"> 
+          alt="" width="130px" 
+          height="32px"> 
         <!--  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>-->
@@ -35,7 +86,7 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a style= "margin-top: -30px" class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  <a style= "margin-top: -25px" class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link max-lg-2" href="#About">About</a>
@@ -59,60 +110,85 @@
               -->
             </div>
           </div>
-          <a href="#" class="log-in-button">Login</a>
+          <a href="#" class="log-in-button">Admin-Login</a>
           <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" bg= grey data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
       </nav>
-
-      <!-- adding carousel  -->
-      <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
-		<div class="carousel-indicators">
-			<button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button>
-		</div>
+	<div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
+		<ol class="carousel-indicators">
+			<li class="active" data-slide-to="0" data-target="#carouselExampleIndicators"></li>
+			<li data-slide-to="1" data-target="#carouselExampleIndicators"></li>
+			<li data-slide-to="2" data-target="#carouselExampleIndicators"></li>
+		</ol>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img alt="..." class="d-block w-100" src="pictures\clg2.png">
-				<div class="carousel-caption">
+				<img alt="First slide" class="d-block w-100" src="pictures\clg4.png">
+				<div class="carousel-caption d-none d-md-block">
 					<h5 class="animated bounceInRight" style="animation-delay: 1s">Event Managment Portal</h5>
-					<p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
-					<p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">Learn More</a></p>
+					<p class="animated bounceInLeft" style="animation-delay: 2s ">Welcome to Event-managment Portal of Techno Main Saltlake</p>
+					<p class="animated bounceInRight" style="animation-delay: 3s"><a href="#About">More Info</a></p>
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img alt="..." class="d-block w-100" src="pictures\clg4.png">
-				<div class="carousel-caption">
-					<h5 class="animated bounceInRight" style="animation-delay: 1s">Departmental Events</h5>
-					<p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
-					<p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">Learn More</a></p>
+				<img alt="Second slide" class="d-block w-100" src="pictures\clg2.png">
+				<div class="carousel-caption d-none d-md-block">
+					<h5 class="animated slideInDown" style="animation-delay: 1s">Departmental Events</h5>
+					<p class="animated fadeInUp" style="animation-delay: 2s">Stay tuned for exciting departmental events that showcase the talents and achievements of our students.</p>
+					<p class="animated zoomIn" style="animation-delay: 3s"><a href="#">More Info</a></p>
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img alt="..." class="d-block w-100" src="pictures\clg3.png">
-				<div class="carousel-caption">
-					<h5 class="animated bounceInRight" style="animation-delay: 1s">Other Club-Events</h5>
-					<p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
-					<p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">Learn More</a></p>
+				<img alt="Third slide" class="d-block w-100" src="pictures\clg3.png">
+				<div class="carousel-caption d-none d-md-block">
+					<h5 class="animated zoomIn" style="animation-delay: 1s">Other Club-Events</h5>
+					<p class="animated fadeInLeft" style="animation-delay: 2s">Experience the diverse and exciting club events that showcase the talents and interests of our student body!</p>
+					<p class="animated zoomIn" style="animation-delay: 3s"><a href="#">More Info</a></p>
 				</div>
 			</div>
-		</div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
+		</div><a class="carousel-control-prev" data-slide="prev" href="#carouselExampleIndicators" role="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" data-slide="next" href="#carouselExampleIndicators" role="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
 	</div>
-  <!--  ABOUT US-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+	</script> 
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+	</script>
+     <!--  ABOUT US-->
   <section id="About">
     <div class="title">
   </br>
       <h2>About Us</h2>
       <p>
-welcome to this event managment website
+    <b><i>   
+welcome to this event managment website.</i></b> 
       </p>
   </div>
   <div class="content">
-     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus dicta beatae aperiam blanditiis praesentium, animi magni pariatur eius earum accusamus soluta numquam ea enim ullam consectetur quas et. Iure, sit.</p>
-      </div>
+     <p><b>Techno Main Saltlake is home to a vibrant community of students who are actively involved in various clubs and societies. These clubs organize a plethora of events and festivals throughout the year, providing students with opportunities to showcase their talents and creativity.
+
+        Our event management portal serves as a centralized platform to manage and showcase these events. Whether you're a participant looking to register for an event or an organizer seeking to promote your club's fest, our portal has you covered.
+        
+        For those eager to participate, the portal provides information about ongoing events, including details about the venue, schedule, and registration process. Stay updated with the latest happenings and make sure you don't miss out on any exciting opportunities.
+        
+        Planning ahead? Explore the upcoming events section to get a sneak peek into what's in store. Mark your calendars and prepare to be a part of the thrilling experiences that our clubs have in store for you.
+        
+        Join us on this journey of creativity, innovation, and camaraderie as we celebrate the diverse talents of the Techno Main Saltlake community. Dive into the world of events and let your talents shine!</p>
+    </b></div>
   </div>
   </section>
     <!--   adding slider -->
+    <section id="clubs">
+        <div class="title">
+        </br>
+            <h5>Clubs</h5>
+            <p>
+                <b><i>   
+            For more information hover on the images.</i></b> 
+                  </p>
+        </div>
+        </section>
     <div class="content-area">
         <div class="container">
           <div class="row">
@@ -120,13 +196,18 @@ welcome to this event managment website
               <div class="box">
                 <div class="content">
                     <div class="front img-1"> 
+                            <!-- Add your image or content here -->
+                          </a>
                         <!-- front content -->
                     </div>
                     <div class="back">
                       <div class="back-content">
-                        <h2>Social Club</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, officia?</p>
-                      </div>
+                        <h2>Technical Club</h2>
+                        <p>"Edge: Where Innovation Meets Inspiration - Geekonix's premier tech fest at Techno Main Saltlake, pushing the boundaries of technology!"</p>
+                        <a href="https://geekonix.org/" target="_blank" rel="noopener noreferrer">
+                            Visit our website
+                          </a>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -139,8 +220,11 @@ welcome to this event managment website
                     </div>
                     <div class="back">
                         <div class="back-content">
-                          <h2>Technical Club</h2>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, officia?</p>
+                          <h2>Cultural Club</h2>
+                          <p>"Anakhronus: Unleashing Timeless Creativity - Experience the magic of the past, present, and future through Ankuran's cultural extravaganza!"</p>
+                          <a href="https://anakhronos.in/" target="_blank" rel="noopener noreferrer">
+                            Visit our website
+                          </a>
                         </div>
                     </div>
                 </div>
@@ -154,9 +238,12 @@ welcome to this event managment website
                     </div>
                     <div class="back">
                       <div class="back-content">
-                        <h2>Cultural Club</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, officia?</p>
-                      </div>
+                        <h2>social Club</h2>
+                        <p>"Philanthropiya: Spreading Smiles, Changing Lives - Join Samaritans in a festival of giving back and making a difference in our community!"</p>
+                        <a href="https://samaritansti.org.in/" target="_blank" rel="noopener noreferrer">
+                            Visit our website
+                          </a>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -164,7 +251,7 @@ welcome to this event managment website
           </div>
         </div>
       </div>
-      
+      </div>
       
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
       <script>
@@ -182,5 +269,8 @@ welcome to this event managment website
 	</script>
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 	</script>
+    <footer class="footer">
+        <p> &copy; All rights reserved.</p>
+    </footer>
 </body>
 </html>
