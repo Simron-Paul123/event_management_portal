@@ -34,7 +34,7 @@
 }
 
 .navbar-nav .nav-link.active , .navbar-nav .show>.nav-link{
-    color: green !important;
+    color: bisque !important;
 }
 
 
@@ -57,49 +57,10 @@
     }
     
 }
-/* styling carousel*/
-* {
-	font-family: 'Montserrat', sans-serif;
-}
-.body{
-    background-color: rgba(0, 0, 0, 0.6);
-}
-.bg-light {
-	background-color: transparent !important;
-}
-.carousel-item {
-	height: 100vh;
-	min-height: 300px;
-}
-.carousel-caption {
-	bottom: 220px;
-}
-.carousel-caption h5 {
-	font-size: 45px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	margin-top: 25px;
-}
-.carousel-caption p {
-	width: 60%;
-	margin: auto;
-	font-size: 18px;
-	line-height: 1.9;
-}
-.carousel-caption a {
-	text-transform: uppercase;
-	text-decoration: none;
-	background: darkorange;
-	padding: 10px 30px;
-	display: inline-block;
-	color: #000;
-	margin-top: 15px;
-}
-@media (min-width: 768px) {
-    
-}
+
 /* About*/
 #About{
+    background-color:gray;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,13 +91,49 @@
     color: #fff;
     }
 /* styling slider */
-
-
-body{
-	background-color: black;
+#clubs{
+    background-color: darkslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+h5{
+    font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	font-family: merienda;
+    color: aqua;
+}
+.title{
+    width: 100%;
+    text-align: center;
+    }
+    .title p{
+    color: #fff;
+    }
+    .title h2{
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    }
+    .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    }
+    .content h2{
+    color: #fff;
+    }
+
 .content-area {
 	padding: 10% 0;
+    background-color: darkslategray; 
 }
 .box.animate .content {
     transform: rotateY(180deg);
@@ -170,7 +167,7 @@ body{
 	text-align: center;
 	padding: 15px;
     transform: rotateY(180deg);
-    background-color: beige;
+    background-color: grey;
 }
 .back-content {
 	border: 10px inset #ddd;
@@ -181,19 +178,19 @@ body{
 	font-size: 40px;
 }
 .img-1 {
-    background: url(pictures/clg1.png);
+    background: url(pictures/club2.png);
     background-size: cover;
 	background-position: center center;
 }
 
 .img-2 {
-    background: url(pictures/clg2.png);
+    background: url(pictures/club3.png);
     background-size: cover;
 	background-position: center center;
 }
 
 .img-3 {
-    background: url(pictures/clg3.png);
+    background: url(pictures/club1.png);
     background-size: cover;
 	background-position: center center;
 }
@@ -217,4 +214,12 @@ body{
 		padding: 100px 5px;
 	}
 }
+ /*footer */
  
+ .footer {
+    background-color: #222; /* Teal color */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px; /* Adjust as needed */
+  }
