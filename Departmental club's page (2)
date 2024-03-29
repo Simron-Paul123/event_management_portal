@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Department of Information Technology</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+        * {
+            box-sizing: border-box;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            color: #555;
+            background: #ADD8E6; 
+            text-align: center;
+            font-family: 'Roboto Mono', monospace;
+            padding: 2em;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 1em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.5;
+            margin-bottom: 1.5em;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            width: 80%;
+            margin-bottom: 2em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff; /* White background r jodi kno change krte hoy krte paris*/
+        }
+
+        .item img {
+            width: 40%; 
+            height: auto;
+            transition: transform 0.3s ease; 
+        }
+
+        .item img:hover {
+            transform: scale(1.1); 
+        }
+
+        .info {
+            width: 60%;
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+        }
+
+       
+        .item:nth-child(even) .info {
+            order: -1;
+        }
+
+        @media screen and (max-width: 768px) {
+            .item {
+                flex-direction: column;
+                width: 90%;
+            }
+
+            .item img {
+                width: 100%;
+            }
+
+            .info {
+                width: 100%;
+                padding: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>The Department of Information Technology</h1>
+    <div class="container">
+        <div class="item">
+            <img src="https://thumbs.dreamstime.com/b/cartoon-international-day-peace-promote-understanding-powerful-image-symbolic-cultures-advocating-non-277187875.jpg" alt="Inspirit">
+            <div class="info">
+                <h2>Inspirit</h2>
+                <p>Inspirit is the official cultural club of the department of Information Technology. It aims to promote cultural understanding and diversity among students through various activities and events.</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="info">
+                <h2>D E ' A T H L E T I C O</h2>
+                <p>The Department of Information Technology believes
+                    in the motto of service towards society and hence
+                    started De-Athletico , the official Social Services club
+                    under Inspirit. The club members are engaged in lots
+                    of activities which provide help to the deprived
+                    sections of the society.
+                    </p>
+            </div>
+            <img src="https://wallpapers.com/images/hd/woman-athletic-runner-digital-art-0zps7sm48er5g390.jpg" alt="Inspirit">
+        </div>
+        <div class="item">
+            <img src="https://wallpapers.com/images/hd/dark-grey-aesthetic-4jbechexdcte0alm.jpg" alt="Mindspark">
+            <div class="info">
+                <h2>Mindspark</h2>
+                <p>Mindspark is the official technical club of the department of Information Technology. It focuses on fostering innovation, technical skill development, and collaborative projects among students. The technical club is an excellent way for students to
+                    enhance their academic experience and prepare for a
+                    career in technology.</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="info">
+                <h2>E M P O W E R I T</h2>
+                <p>Empower IT brings together aspiring entrepreneurs to
+                    share ideas, collaborate, and learn from each other.
+                    The club's primary objective is to create a community
+                    of like-minded individuals who are passionate about
+                    starting and growing businesses.
+                    We offer a wide range of activities, including
+                    networking events, workshops,pitch
+                    competitions,and startup
+                    incubation support.
+                    
+                    </p>
+            </div>
+            <img src="https://news.blr.com/app/uploads/sites/2/2019/06/Mobile-device.jpeg" alt="Mindspark">
+        </div>
+        <div class="item">
+            <img src="https://cdn.wallpapersafari.com/61/92/YOeMP6.jpg" alt="Intellect">
+            <div class="info">
+                <h2>Intellect</h2>
+                <p>Intellect is the coding club of the department of Information Technology. It provides a platform for students to enhance their coding skills, participate in coding competitions, and engage in peer-to-peer learning.The club offers a supportive community where
+                    students can learn from each other and share their
+                    knowledge and experiences. </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
